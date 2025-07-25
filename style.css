@@ -1,0 +1,47 @@
+:root {
+  --body-padding: 15px;
+}
+
+body {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+}
+
+main {
+  padding-left: var(--body-padding);
+  padding-right: var(--body-padding);
+}
+
+header {
+  text-align: center;
+  margin: 45px 0;
+}
+
+section {
+  margin: 80px 0;
+}
+
+footer {
+  font-size: 18px;
+  color: #6d8566;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.card {
+  margin: 40px 0;
+}
+
+.contact,
+.about {
+  margin-top: 0;
+}
+
+.hero {
+  background-image: url(./assets/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 46vh;
+}
