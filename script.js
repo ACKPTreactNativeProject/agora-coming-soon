@@ -2,11 +2,20 @@
 const mobileMenu = document.getElementById("mobileMenu");
 const navLinks = document.querySelector(".nav-links");
 
-mobileMenu.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  mobileMenu.classList.toggle("active");
-  console.log("clicked");
-});
+if (mobileMenu && navLinks) {
+    mobileMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+   
+    // Close menu when clicking on a link
+    navLinks.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            navLinks.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        }
+    });
+}
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -36,18 +45,12 @@ window.addEventListener("scroll", () => {
 
 // Button click handlers
 document.addEventListener("click", (e) => {
-  if (e.target.classList.contains("join-btn")) {
-    console.log("Join Agora clicked");
-    // Add your join functionality here
-  }
-
   if (e.target.classList.contains("contact-btn")) {
-    console.log("Contact button clicked");
-    // Add your contact functionality here
+    window.open("https://forms.gle/rJWUU6yhZcsdw5Qy7", "_blank");
   }
 
   if (e.target.classList.contains("cta-btn")) {
-    console.log("Get Started clicked");
-    // Add your get started functionality here
+    window.open("https://forms.gle/rJWUU6yhZcsdw5Qy7", "_blank");
+
   }
 });

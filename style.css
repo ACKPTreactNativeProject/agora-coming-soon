@@ -265,8 +265,8 @@ body {
   background: white;
 }
 
-.contact-grid {
-  grid-template-columns: 2fr 1fr;
+.contact-main {
+  text-align: center;
 }
 
 .contact-main h2 {
@@ -300,7 +300,7 @@ body {
   transform: translateY(-1px);
 }
 
-.join-card {
+/* .join-card {
   background: #f7fafc;
   text-align: center;
   display: flex;
@@ -319,7 +319,7 @@ body {
 .join-card p {
   color: #4a5568;
   margin-bottom: 1.25rem;
-}
+} */
 
 /* Footer */
 .footer {
@@ -372,7 +372,48 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    transition: right 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .join-btn {
+    margin-top: 1rem;
+    width: 80%;
+  }
+
+  /* Hamburger Animation */
+  .mobile-menu.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .mobile-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 
   .mobile-menu {
@@ -391,8 +432,11 @@ body {
       "card2";
   }
 
-  .hero-main h1 {
-    font-size: 1.9rem;
+  .hero-main {
+    text-align: center;
+    h1 {
+      font-size: 1.9rem;
+    }
   }
 
   .about {
