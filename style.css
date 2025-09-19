@@ -178,6 +178,7 @@ body {
 
 .icon.rocket {
   transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .icon.rocket:hover {
