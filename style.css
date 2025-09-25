@@ -59,6 +59,7 @@ body {
 .logo-container {
   width: 45px;
   margin-right: 8px;
+  display: flex;
 }
 
 .logo-img {
@@ -69,6 +70,7 @@ body {
 
 .logo-text {
   font-size: 1.75rem;
+  margin-inline-start: 8px;
 }
 
 .nav-links {
