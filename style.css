@@ -53,6 +53,24 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: #2d3748;
+  display: flex;
+}
+
+.logo-container {
+  width: 45px;
+  margin-right: 8px;
+  display: flex;
+}
+
+.logo-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-text {
+  font-size: 1.75rem;
+  margin-inline-start: 8px;
 }
 
 .nav-links {
@@ -116,6 +134,12 @@ body {
   padding: 1.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   border: 1px solid #e2e8f0;
+  transition: all 0.3s;
+}
+
+.bento-item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
 }
 
 /* Hero Section */
@@ -137,6 +161,10 @@ body {
   grid-area: main;
   background: #f7fafc;
   border: 1px solid #e2e8f0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-main h1 {
@@ -150,7 +178,44 @@ body {
 .hero-main p {
   font-size: 1rem;
   color: #4a5568;
+}
+
+.hero-main .tagline {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.hero-main p {
   margin-bottom: 1.5rem;
+}
+
+.icon.rocket {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.icon.rocket:hover {
+  transform: translate(10px, -10px) scale(1.2);
+  opacity: 0.8;
+}
+
+.icon.money{
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+.icon.money:hover {
+  animation: flutter 0.6s ease forwards;
+}
+
+@keyframes flutter {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(10deg); }
+  50%  { transform: rotate(-10deg); }
+  75%  { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .cta-btn {
@@ -163,6 +228,7 @@ body {
   cursor: pointer;
   transition: all 0.3s;
   font-size: 0.95rem;
+  align-self: flex-start;
 }
 
 .cta-btn:hover {
@@ -234,6 +300,7 @@ body {
 .about-main p {
   font-size: 1rem;
   color: #4a5568;
+  margin-bottom: 1rem;
 }
 
 .for-consumers {
@@ -413,6 +480,10 @@ body {
   .join-btn {
     margin-top: 1rem;
     width: 80%;
+  }
+
+  .cta-btn {
+    align-self: center;
   }
 
   /* Hamburger Animation */
