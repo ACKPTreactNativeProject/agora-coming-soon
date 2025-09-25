@@ -1,72 +1,156 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agora - Virtual Farmer's Market</title>
     <link rel="stylesheet" href="style.css" />
-
-    <title>Agora Ontario Inc.</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
   </head>
   <body>
-    <header>
-      <h1 class="">Agora</h1>
-      <p>Coming Soon!</p>
-      <div class="hero"></div>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#home">Agora</a>
+        </div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
-    <main>
-      <section class="about">
-        <h2>About us</h2>
-        <p>
-          Agora connects you with local farmers, providing access to the
-          freshest, affordable, high-quality produce. We are committed to
-          sustainability, fair pricing, and supporting our community's farmers.
-        </p>
-      </section>
-      <section>
-        <div class="card">
-          <h3>🛒 For Consumers</h3>
-          <p>
-            Discover fresh, seasonal produce from local farms in your area. Skip
-            the middleman and enjoy farm-fresh quality at fair prices, while
-            supporting your local agricultural community.
-          </p>
-        </div>
-        <div class="card">
-          <h3>🚜 For Farmers</h3>
-          <p>
-            Connect directly with customers who value quality and
-            sustainability. Set your own prices, build lasting relationships,
-            and grow your business through our easy-to-use platform.
-          </p>
-        </div>
-        <div class="card">
-          <h3>🌱 Community Impact</h3>
-          <p>
-            Strengthen local food systems, reduce environmental impact through
-            shorter supply chains, and foster connections between producers and
-            consumers in your community.
-          </p>
+
+    <main id="home">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="bento-grid hero-grid">
+            <div class="bento-item hero-main">
+              <h1>Fresh. Local. Direct.</h1>
+              <p>
+                Agora connects you with local farmers, providing access to the
+                freshest, affordable, high-quality produce. We are committed to
+                sustainability, fair pricing, and supporting our community's
+                farmers.
+              </p>
+              <button class="cta-btn">Contact Us</button>
+            </div>
+
+            <div class="bento-item hero-card">
+              <span class="icon">🛒</span>
+              <h3>Farm Fresh</h3>
+              <p>Direct from local farms</p>
+            </div>
+
+            <div class="bento-item hero-card">
+              <span class="icon">✅🏷️</span>
+              <h3>Fair Prices</h3>
+              <p>No middleman markup</p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="contact">
-        <h2>Contact us</h2>
-        <p>
-          Join Agora and be part of the movement connecting communities through
-          fresh, local food. Whether you're a farmer looking to reach new
-          customers or a consumer seeking affordable quality produce, we'd love
-          to hear from you. Contact us
-          <a href="https://forms.gle/rJWUU6yhZcsdw5Qy7" target="_blank">here</a
-          >!
-        </p>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="bento-grid about-grid">
+            <div class="bento-item about-main">
+              <h2>About Agora</h2>
+              <p>
+                We bridge the gap between local farmers and conscious consumers,
+                creating a sustainable marketplace that benefits everyone in the
+                community.
+              </p>
+            </div>
+
+            <div class="bento-item for-consumers">
+              <div class="section-header">
+                <span class="emoji">🛒</span>
+                <h3>For Consumers</h3>
+              </div>
+              <p>
+                Discover fresh, seasonal produce from local farms in your area.
+                Skip the middleman and enjoy farm-fresh quality at fair prices,
+                while supporting your local agricultural community.
+              </p>
+            </div>
+
+            <div class="bento-item for-farmers">
+              <div class="section-header">
+                <span class="emoji">🚜</span>
+                <h3>For Farmers</h3>
+              </div>
+              <p>
+                Connect directly with customers who value quality and
+                sustainability. Set your own prices, build lasting
+                relationships, and grow your business through our easy-to-use
+                platform.
+              </p>
+            </div>
+
+            <div class="bento-item community-impact">
+              <div class="section-header">
+                <span class="emoji">🌱</span>
+                <h3>Community Impact</h3>
+              </div>
+              <p>
+                Strengthen local food systems, reduce environmental impact
+                through shorter supply chains, and foster connections between
+                producers and consumers in your community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="bento-grid contact-grid">
+            <div class="bento-item contact-main">
+              <h2>Contact Us</h2>
+              <p>
+                Join Agora and be part of the movement connecting communities
+                through fresh, local food. Whether you're a farmer looking to
+                reach new customers or a consumer seeking affordable quality
+                produce, we'd love to hear from you.
+              </p>
+              <button class="contact-btn">Contact us here!</button>
+            </div>
+
+            <!-- <div class="bento-item join-card">
+              <h3>Ready to Join?</h3>
+              <p>Start connecting with your local food community today</p>
+              <button class="join-btn">Join Agora</button>
+            </div> -->
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>© 2025 Agora Ontario Inc. All rights reserved.</p>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h4>Agora</h4>
+            <p>Connecting communities through fresh, local food</p>
+          </div>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Agora Ontario Inc | All rights reserved.</p>
+        </div>
+      </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
