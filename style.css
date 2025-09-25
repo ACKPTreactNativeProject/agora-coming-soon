@@ -37,6 +37,18 @@ body {
   margin: 0 auto;
 }
 
+.navbar .logo a {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .logo a:hover {
+  color: #2d3748;
+}
+
+
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
