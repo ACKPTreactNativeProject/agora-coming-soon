@@ -321,6 +321,10 @@ body {
   width: 100%;
 }
 
+.about-main .slogan {
+  font-weight: bold;
+}
+
 .for-consumers {
   grid-area: consumers;
 }
