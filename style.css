@@ -286,7 +286,6 @@ body {
 
 .about-main {
   grid-area: about-main;
-  text-align: center;
   background: white;
 }
 
@@ -295,12 +294,35 @@ body {
   font-weight: 700;
   margin-bottom: 0.75rem;
   color: #1a202c;
+  text-align: center;
 }
 
 .about-main p {
   font-size: 1rem;
   color: #4a5568;
   margin-bottom: 1rem;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-main .img-container {
+  margin: 30px;
+}
+
+.about-main img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-main .text-container {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.about-main .slogan {
+  font-weight: bold;
 }
 
 .for-consumers {
