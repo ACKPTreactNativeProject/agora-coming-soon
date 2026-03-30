@@ -630,3 +630,7 @@ body {
     padding: 1rem;
   }
 }
+
+/* FAQ list & disclosure styles */
+#faq ol{margin-left:1rem;list-style:none;}
+#faq ol li::marker{content:counter(list-item,decimal)". ";color:#006600;font-weight:400;}
