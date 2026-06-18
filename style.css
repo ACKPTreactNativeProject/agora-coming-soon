@@ -70,6 +70,8 @@ body {
 
 .logo-text {
   font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: calc(1.05 * .06rem);
   margin-inline-start: 8px;
 }
 
